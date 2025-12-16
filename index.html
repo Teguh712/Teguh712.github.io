@@ -1,4 +1,133 @@
-<?php
-// index.php
-header("Location: login.php");
-exit();
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Login - Sistem Aset IT</title>
+              <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+              <style>
+                            * {
+                                          box-sizing: border-box;
+                            }
+
+                            body {
+                                          font-family: 'Inter', sans-serif;
+                                          background: linear-gradient(135deg, #e0f7fa, #80deea);
+                                          margin: 0;
+                                          height: 100vh;
+                                          display: flex;
+                                          align-items: center;
+                                          justify-content: center;
+                            }
+
+                            .login-container {
+                                          background-color: #ffffff;
+                                          padding: 30px 25px;
+                                          border-radius: 12px;
+                                          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                                          width: 100%;
+                                          max-width: 350px;
+                                          text-align: center;
+                            }
+
+                            .logo {
+                                          width: 120px;
+                                          margin-bottom: 20px;
+                            }
+
+                            h2 {
+                                          color: #333;
+                                          margin-bottom: 20px;
+                                          font-weight: 600;
+                            }
+
+                            form {
+                                          text-align: left;
+                            }
+
+                            label {
+                                          display: block;
+                                          margin-bottom: 6px;
+                                          color: #444;
+                                          font-size: 14px;
+                            }
+
+                            input[type="text"],
+                            input[type="password"] {
+                                          width: 100%;
+                                          padding: 10px 12px;
+                                          margin-bottom: 15px;
+                                          border: 1px solid #ccc;
+                                          border-radius: 6px;
+                                          font-size: 14px;
+                            }
+
+                            input:focus {
+                                          border-color: #5cb85c;
+                                          outline: none;
+                            }
+
+                            button {
+                                          width: 100%;
+                                          padding: 12px;
+                                          background-color: #5cb85c;
+                                          border: none;
+                                          border-radius: 6px;
+                                          color: #fff;
+                                          font-size: 16px;
+                                          font-weight: 600;
+                                          cursor: pointer;
+                            }
+
+                            button:hover {
+                                          background-color: #4cae4c;
+                            }
+
+                            .error {
+                                          color: red;
+                                          font-size: 14px;
+                                          text-align: center;
+                                          margin-top: 10px;
+                            }
+
+                            .register-link {
+                                          margin-top: 15px;
+                                          font-size: 14px;
+                            }
+
+                            .register-link a {
+                                          color: #5cb85c;
+                                          text-decoration: none;
+                                          font-weight: 500;
+                            }
+
+                            .register-link a:hover {
+                                          text-decoration: underline;
+                            }
+              </style>
+</head>
+
+<body>
+              <div class="login-container">
+                            <img src="images/bdsi.png" alt="Logo" class="logo">
+                            <h2>Login</h2>
+                            <form method="POST">
+                                          <label for="username">Username</label>
+                                          <input type="text" name="username" id="username" required>
+
+                                          <label for="password">Password</label>
+                                          <input type="password" name="password" id="password" required>
+
+                                          <button type="submit">Login</button>
+                            </form>
+
+                            <?php if (!empty($error)): ?>
+                                          <p class="error"><?= htmlspecialchars($error) ?></p>
+                            <?php endif; ?>
+
+                            <p class="register-link">Belum punya akun? <a href="register.php">Daftar di sini</a></p>
+              </div>
+</body>
+
+</html>
