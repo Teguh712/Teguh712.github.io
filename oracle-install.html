@@ -2,146 +2,105 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Instalasi Oracle XE & SQL Developer</title>
+<title>Panduan Instalasi Oracle SQL Developer & Oracle XE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
-.step-card{border-left:6px solid #0d6efd}
+body{background:#f4f6f9}
+.step-card{
+  background:#fff;
+  border-radius:15px;
+  padding:25px;
+  margin-bottom:25px;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+.step-img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin-top:15px;
+}
 .step-number{
-  width:45px;height:45px;border-radius:50%;
-  background:#0d6efd;color:white;
-  display:flex;align-items:center;justify-content:center;
-  font-weight:bold;font-size:18px;
+  font-size:20px;
+  font-weight:bold;
+  color:#0d6efd;
 }
 </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html">← Kembali ke Portfolio</a>
-</div>
-</nav>
-
 <div class="container py-5">
-
-<h2 class="mb-2">Instalasi Oracle SQL Developer & Oracle Database XE 21c</h2>
-<p class="text-muted">Dokumentasi Project by Teguh Ramadhan</p>
-
-<hr>
+<h2 class="text-center mb-4">Panduan Instalasi Oracle SQL Developer & Oracle XE</h2>
 
 <!-- STEP 1 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">1</div>
-<h5>Download Oracle SQL Developer</h5>
-</div>
-<p>
-Buka Google Chrome, ketik <b>oracle sql developer download</b> lalu pilih menu
-<b>SQL Developer Download</b>.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 1</div>
+<p>Buka Google Chrome, ketik <b>oracle sql developer download</b> lalu klik <b>SQL Developer Download</b>.</p>
+<img src="img/step1.png" class="step-img">
 </div>
 
 <!-- STEP 2 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">2</div>
-<h5>Pilih Versi Installer</h5>
-</div>
-<p>
-Pilih <b>Windows 64-bit with JDK 17 included</b> lalu download.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 2</div>
+<p>Pilih <b>Windows 64-bit with JDK 17 included</b> lalu download.</p>
+<img src="img/step2.png" class="step-img">
 </div>
 
 <!-- STEP 3 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">3</div>
-<h5>Extract File</h5>
-</div>
-<p>
-Setelah download selesai, file berbentuk <b>.rar</b>. Extract file tersebut hingga muncul folder SQL Developer.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 3</div>
+<p>Setelah selesai download, file berbentuk <b>.rar</b>. Lakukan extract.</p>
+<img src="img/step3.png" class="step-img">
 </div>
 
 <!-- STEP 4 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">4</div>
-<h5>Jalankan SQL Developer</h5>
-</div>
-<p>
-Cari file <b>sqldeveloper.exe</b>, klik kanan lalu pilih <b>Run as Administrator</b>.
-<br><br>
-Oracle SQL Developer adalah IDE berbasis Java untuk mengelola database Oracle termasuk Oracle XE.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 4</div>
+<p>Cari file <b>sqldeveloper.exe</b>, klik kanan → <b>Run as Administrator</b>.</p>
+<img src="img/step4.png" class="step-img">
 </div>
 
 <!-- STEP 5 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">5</div>
-<h5>Install Oracle Database XE</h5>
-</div>
-<p>
-Download Oracle Database XE 21c dari situs resmi Oracle. Setelah selesai, extract file lalu jalankan <b>setup.exe</b> sebagai Administrator.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 5</div>
+<p>SQL Developer berhasil dibuka. Selanjutnya lakukan instalasi Oracle Database XE.</p>
+<img src="img/step5.png" class="step-img">
 </div>
 
 <!-- STEP 6 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">6</div>
-<h5>Setujui License</h5>
-</div>
-<p>
-Pilih <b>I accept the terms in the license agreement</b> lalu klik <b>Next</b>.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 6</div>
+<p>Download Oracle Database XE, extract file lalu jalankan <b>Setup → Run as Administrator → Next</b>.</p>
+<img src="img/step6.png" class="step-img">
 </div>
 
 <!-- STEP 7 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">7</div>
-<h5>Setting Password Database</h5>
-</div>
-<p>
-Masukkan password database. Password ini akan digunakan untuk login ke database dan membuat koneksi baru.
-</p>
-</div>
+<div class="step-card">
+<div class="step-number">Langkah 7</div>
+<p>Pilih <b>I accept the terms in the license agreement</b> lalu klik Next.</p>
+<img src="img/step7.png" class="step-img">
 </div>
 
 <!-- STEP 8 -->
-<div class="card step-card shadow-sm mb-4">
-<div class="card-body">
-<div class="d-flex align-items-center mb-2">
-<div class="step-number me-3">8</div>
-<h5>Selesai Instalasi</h5>
+<div class="step-card">
+<div class="step-number">Langkah 8</div>
+<p>Masukkan <b>Password Database</b>. Password ini akan digunakan saat membuat koneksi di SQL Developer.</p>
+<img src="img/step8.png" class="step-img">
 </div>
-<p>
-Klik <b>Next</b> lalu <b>Finish</b>. Instalasi Oracle Database XE selesai.
-</p>
+
+<!-- STEP 9 -->
+<div class="step-card">
+<div class="step-number">Langkah 9</div>
+<p>Klik <b>Finish</b> dan tunggu sampai instalasi selesai.</p>
+<img src="img/step9.png" class="step-img">
 </div>
+
+<div class="text-center mt-4">
+<b>Instalasi selesai. Oracle siap digunakan 🎉</b>
 </div>
 
 </div>
-
-<footer class="bg-dark text-white text-center py-3">
-© 2025 Teguh Ramadhan
-</footer>
-
 </body>
 </html>
